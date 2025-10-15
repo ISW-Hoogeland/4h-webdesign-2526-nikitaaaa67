@@ -34,21 +34,33 @@
 
 /************************* YOUR SETTINGS *************************/
 
-/* add your css here, feel free to use comments and order them logically for better readability */
 
+/* add your css here, feel free to use comments and order them logically for better readability */
+:root {
+   --background:  #dadad4;
+   --text-decoration: #756143;
+   --font-family: Impact, Haettenschweiler, 'segoe UI', sans-serif;
+
+}
 body {
 display: grid;
-grid-template-area:
-"header nav"
+grid-template-areas:
+"nav header"
 "main main"
 "footer footer";
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 120px 1fr 60px; }
+grid-template-rows: 120px 1fr 60px; 
+background-color: var(--background);
+}
 header {
-grid-area: header; }
+grid-area: header;
+
+}
 nav {
 grid-area: nav; }
 main {
 grid-area: main; }
 footer {
 grid-area: footer; }
+
+
