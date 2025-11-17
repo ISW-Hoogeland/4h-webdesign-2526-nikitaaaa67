@@ -37,8 +37,11 @@
 
 /* add your css here, feel free to use comments and order them logically for better readability */
 :root {
-   --background:  #dadad4;
+   --background:  #f7f6f5;
+   --color: #444444;
+   --link-color: #756143
    --text-decoration: #756143;
+   --link-hover: #a67c52
    --font-family: Impact, Haettenschweiler, 'segoe UI', sans-serif;
 
 }
@@ -48,32 +51,59 @@ grid-template-areas:
 "header header"
 "nav main"
 "footer footer";
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 220px 1fr;
 grid-template-rows: 120px 1fr 60px; 
 background-color: var(--background);
+font-family: var(--font-family );
+color: var(--color);
+margin: 0;
 }
 header {
 grid-area: header;
+background-color: #dadad4;
 margin: 0;
 font-size: 2.4rem;
 }
-nav ul{
-grid-area: nav;
-list-style: none;
-display: list-item;
-gap: 15px;
- }
- nav a {
-   text-decoration: none;
+nav {
+   grid-area: nav;
+   background-color: f0f0f0;
+   padding: 20px;
 }
-nav a:hover {
+nav ul{
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+nav a{
+   text-decoration: #756143;
+   color: var(--link-color);
+   font-weight: bold;
+   padding: 5px;
+   display: block;
+}
+nav a :hover {
    text-decoration: underline;
+   color:  #444444;
 }
 
 
 main {
-grid-area: main; }
+grid-area: main; 
+padding: 20px;
+}
+
+
 footer {
-grid-area: footer; }
+grid-area: footer; 
+background-color: #dadad4;
+color: whitesmoke;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+border-top: 2px solid #756143;
 
-
+}
