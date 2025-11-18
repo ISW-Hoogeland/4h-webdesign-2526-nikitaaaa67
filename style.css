@@ -39,9 +39,9 @@
 :root {
    --background:  #f7f6f5;
    --color: #433e38;
-   --link-color: #756143
+   --link-color: #756143;
    --text-decoration: #756143;
-   --link-hover: #a67c52
+   --link-hover: #a67c52;
    --font-family: Impact, Haettenschweiler, 'segoe UI', sans-serif;
 
 }
@@ -64,10 +64,12 @@ background-color: #dadad4;
 margin: 0;
 font-size: 2.4rem;
 border-bottom: 2px solid #756143;
+padding: 20px;
+text-align: left;
 }
 nav {
    grid-area: nav;
-   background-color: f0f0f0;
+   background-color: #f0f0f0;
    padding: 20px;
 }
 nav ul{
@@ -79,15 +81,16 @@ nav ul{
 }
 
 nav a{
-   text-decoration: #756143;
-   color: var(--link-color);
+   text-decoration: underline; 
+   color: #756143;
    font-weight: bold;
    padding: 5px;
    display: block;
 }
-nav a :hover {
+
+nav a:hover {
    text-decoration: underline;
-   color:  #444444;
+   color: #444444;
 }
 
 
@@ -107,4 +110,12 @@ justify-content: center;
 font-weight: bold;
 border-top: 2px solid #756143;
 
+}
+
+img {
+   margin: 5px;
+   border-radius: 6px;
+   height: 200px;
+   width: auto;
+   max-width: 100%;
 }
